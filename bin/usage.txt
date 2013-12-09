@@ -1,0 +1,27 @@
+usage:
+
+  autopkginit config.json
+
+    Provide a config.json, and answer all the questions
+    Sample config.json:
+    {
+      "do you want to use browserify? (Y/n) ": {
+        "dependencies": {
+          "browserify": "~2.35.2",
+          "uglifyjs": "~2.3.6"
+        },
+        "scripts": {
+          "build-js": "browserify browser/main.js | uglifyjs -mc > static/bundle.js"
+        },
+        "default": true
+      },
+      "do you want to use a watcher for the JS files? (y/N) ": {
+        "devDependencies": {
+          "watchify": "~0.1.0"
+        },
+        "scripts": {
+          "watch-js": "watchify browser/main.js -o static/bundle.js -dv"
+        },
+        "default": false
+      }
+    }

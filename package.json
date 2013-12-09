@@ -1,0 +1,22 @@
+{
+    "name" : "autopkginit",
+    "version" : "0.0.1",
+    "description" : "Tiny helper to speed up common npm script utils for task automation.",
+    "bin" : {"autopkginit":"bin/cmd.js"},
+    "dependencies" : {
+        "answer-question-mapper": "*",
+        "optimist": "*"
+    },
+    "repository" : {
+        "type" : "git",
+        "url" : "git://github.com/johannesboyne/autopkginit.git"
+    },
+    "homepage" : "https://github.com/johannesboyne/autopkginit",
+    "keywords" : ["task","automation,","npm","scripts,","auto,","pkginit"],
+    "author" : {
+        "name" : "Johannes Boyne",
+        "email" : "johannes@boyne.de"
+    },
+    "license" : "MIT",
+    "engine" : { "node" : ">=0.6" }
+}
